@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mobile Test</title>
+</head>
+<body>
+<H1>Link Test</H1>
+<label>Normal Anchor: </label><a href="popup.html">same window</a><br>
+<label>Window Open: </label><a id="wopen" href="_blank">another window</a><br>
+<!-- https://en.wikipedia.org/wiki/List_of_URI_schemes -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler -->
+<!-- https://beradrian.wordpress.com/2010/01/15/special-links/ -->
+<!-- apple app store https://developer.apple.com/forums/thread/104915 -->
+<label>Tel: </label><a href="tel:+821000000000">telephone</a><br>
+<label>SMS: </label><a href="sms:+821000000000?body=hello">sms</a><br>
+<label>SMSTO: </label><a href="smsto:+821000000000">smsto</a><br>
+<label>MMS: </label><a href="mms:+821000000000">mms</a><br>
+<label>MMSTO: </label><a href="mmsto:+821000000000">mmsto</a><br>
+<label>Mail: </label><a href="mailto:abc@abcdefg.com?subject=test&body=test">mail</a><br>
+<!-- details?id=Package_name, search?q=Search_Query, search?q=pub:Publisher_Name -->
+<label>Google Play: </label><a href="market://details?id=com.android.chrome">google play chrome</a><br>
+<label>Google Play Publisher: </label><a href="market://search?q=pub:Google LLC&c=apps">google apps</a><br>
+<label>Apple App Store: </label><a href="itms-apps://itunes.apple.com/app/id">app store</a><br>
+<!-- pdf download or view -->
+<label>PDF: </label><a href="test.pdf">pdf file</a><br>
+<script>
+const wopen = document.querySelector('#wopen');
+wopen.addEventListener('click', e => {
+	e.preventDefault();
+	//window.location = "popup.html";
+	window.open("popup.html");
+});
+</script>
+</body>
+</html>
