@@ -7,7 +7,7 @@
 ```<a href="_blank">another window</a>```
 
 ## Well-Known URL Schemes
-### Phone Number
+### Phone Call
 ```<a href="tel:+820000000000">telephone</a>```
 ### Text
 - SMS: ```<a href="sms:+821000000000?body=hello">sms</a>```
