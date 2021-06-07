@@ -10,7 +10,7 @@
 ### Phone Number
 ```<a href="tel:+820000000000">telephone</a>```
 ### Text
-- SMS: ```<a href="sms:+821000000000?body=hello">sms</a>````
+- SMS: ```<a href="sms:+821000000000?body=hello">sms</a>```
 - SMSTO: ```<a href="smsto:+821000000000">smsto</a>```
 - MMS: ```<a href="mms:+821000000000">mms</a>```
 - MMSTO: ```<a href="mmsto:+821000000000">mmsto</a>```
