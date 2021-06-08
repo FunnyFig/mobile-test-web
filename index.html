@@ -83,7 +83,7 @@ function ncaptureFrame() {
 	video.srcObject.getVideoTracks().forEach(track => track.stop());
 }
 
-document.querySelector('#cam').onclick = () => {
+document.querySelector('#stop_capture').onclick = () => {
 	procFrame = ncaptureFrame;
 };
 
